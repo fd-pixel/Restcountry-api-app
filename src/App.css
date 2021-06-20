@@ -1,38 +1,104 @@
 .App {
   text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  /* flex-direction: row; */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: beige;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+img {
+  max-width: 5rem;
+}
+.detail-name {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.name {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.box {
+  width: 7rem;
+  /* border: 2px solid; */
+  margin-top: 5rem;
+  margin-right: 2rem;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 3px;
+  box-shadow: 4px 7px 11px 6px rgba(0, 0, 0, 0.38);
+}
+.box-detail {
+  width: 15rem;
+  border: none;
+  margin-top: 5rem;
+  margin-left: 8rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 4px 7px 11px 6px rgba(0, 0, 0, 0.38);
+  background-image: linear-gradient(
+    45deg,
+    rgba(25, 136, 247, 1) 26%,
+    rgba(247, 25, 136, 1) 79%
+  );
+  border-radius: 5px;
+}
+.detail-main {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.form {
+  margin-top: 5rem;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content: center;
+}
+.population {
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+.App {
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+nav {
+  background-color: rgb(231, 248, 204);
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  color: rgb(76, 188, 202);
+  font-family: cursive;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navleft a {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(76, 188, 202);
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+
+  cursor: pointer;
+  padding-left: 1rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(19, 78, 167);
+}
+nav ul li a:hover {
+  text-decoration: none;
+  color: rgb(76, 188, 202);
+}
+#input {
+  max-width: 20rem;
+  margin-right: 2rem;
+  border: none;
+  height: auto;
 }
