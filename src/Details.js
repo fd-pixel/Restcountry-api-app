@@ -4,7 +4,7 @@ import Country from "./Country";
 
 const Details = (props) => {
   console.log("props", props);
-  const res = props.location.country;
+  const res = props?.location?.country;
 
   return (
     <div class="detail-main">
@@ -13,15 +13,22 @@ const Details = (props) => {
         <div className="flag">
           <img src={res?.flag} alt="fgh" />
         </div>
-        <div className="continent">Continent : {res?.region}</div>
-        <div className="capital">Capital : {res?.capital}</div>
-        <div className="currency">Currency : {res?.currencies[0].name}</div>
-        <div className="population">Population :{res?.population}</div>
+        <div class="info-box">
+          <div className="continent ">Continent : {res?.region}</div>
+          <div className="capital">Capital : {res?.capital}</div>
+          <div className="currency">Currency : {res?.currencies[0].name}</div>
+          <div className="population">Population :{res?.population}</div>
+        </div>
+
         <div className="borders">
-          {res?.name} has {res?.borders.length} neighboring countries {}{" "}
+          {res?.name} has {res?.borders?.length} neighboring countries {}{" "}
           {res?.borders?.map((border, index) => {
             console.log(border);
-            return <p style={{ color: "black" }}>{border}</p>;
+            return (
+              <p style={{ color: "yellow" }}>
+                {index + 1}-{border}
+              </p>
+            );
           })}
         </div>
       </div>

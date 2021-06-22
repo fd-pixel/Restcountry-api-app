@@ -102,3 +102,29 @@ nav ul li a:hover {
   border: none;
   height: auto;
 }
+.info-box {
+  width: auto;
+  /* border: 2px solid; */
+  margin-top: 3rem;
+  margin-right: rem;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 3px;
+  box-shadow: 4px 7px 11px 6px rgba(0, 0, 0, 0.38);
+  background: linear-gradient(
+    to bottom,
+    #f99e15 0%,
+    #eca014 10%,
+    #ca961c 25%,
+    #d39e17 37%,
+    #dca312 50%,
+    #bd8a13 51%,
+    #ed850f 83%,
+    #fb6717 100%
+  );
+}
+.borders {
+  margin-top: 2rem;
+}
