@@ -33,6 +33,7 @@ const Form = () => {
               setRegion("region/" + e.target.value.toLowerCase())
             }
             id="input"
+            autoFocus
           />
           <button type="submit" class="btn btn-primary btn-sm">
             Search by Continent
