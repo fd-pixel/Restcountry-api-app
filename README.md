@@ -1,3 +1,5 @@
+Rest country api used to search countries by their region
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
