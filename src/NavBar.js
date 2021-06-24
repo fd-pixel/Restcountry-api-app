@@ -4,18 +4,22 @@ const Navbar = () => {
   return (
     <div>
       <nav>
-        <div className="navleft">
-          <Link to="/">Home</Link>
+        <div className="navleft btn btn-primary">
+          <Link to="/">HOME</Link>
         </div>
+        <div className="navcenter">Welcome to the World of the Countries</div>
         <ul>
           <li>
-            <Link to="/about">ABOUT ME</Link>
+            <Link to="/about" className="btn btn-primary">
+              ABOUT ME
+            </Link>
           </li>
           <li>
             <Link
               to={{ pathname: "https://github.com/fd-pixel" }}
               target="_blank"
               rel="noopener noreferrer"
+              className="btn btn-primary"
             >
               GITHUB
             </Link>

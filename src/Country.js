@@ -25,12 +25,10 @@ const Country = ({ country }) => {
       <div className="box">
         <div className="name">{country?.name}</div>
         <div className="flag">
-          <img
-            src={country?.flag}
-            alt="fgh"
-            onClick={handleClick}
-            cursor="pointer"
-          />
+          <img src={country?.flag} alt="fgh" cursor="pointer" />
+          <div className="btn btn-info btn-sm" onClick={handleClick}>
+            Details
+          </div>
         </div>
       </div>
     </div>

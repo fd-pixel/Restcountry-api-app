@@ -1,11 +1,53 @@
+nav {
+  background-color: rgb(221, 176, 189);
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  color: rgb(76, 188, 202);
+  font-family: cursive;
+  align-items: center;
+}
+.navcenter {
+  font-family: fantasy;
+  color: white;
+}
+
+.navleft a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+
+  cursor: pointer;
+  padding-left: 1rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(19, 78, 167);
+}
+nav ul li a:hover {
+  text-decoration: none;
+  color: rgb(76, 188, 202);
+}
 .App {
   text-align: center;
 
   /* flex-direction: row; */
 }
 body {
-  background-color: beige;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(93, 208, 113, 0.8911939775910365) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
+
 img {
   max-width: 5rem;
 }
@@ -18,7 +60,7 @@ img {
   font-size: 1rem;
 }
 .box {
-  width: 7rem;
+  max-width: 10rem;
   /* border: 2px solid; */
   margin-top: 5rem;
   margin-right: 2rem;
@@ -27,12 +69,19 @@ img {
   padding: 1rem;
   border-radius: 3px;
   box-shadow: 4px 7px 11px 6px rgba(0, 0, 0, 0.38);
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 232, 29, 1) 0%,
+    rgba(252, 176, 69, 1) 100%
+  );
 }
 .box-detail {
   width: 15rem;
   border: none;
   margin-top: 5rem;
-  margin-left: 8rem;
+  /* margin-left: 8rem; */
   justify-content: center;
   align-items: center;
   padding: 1rem;
@@ -66,36 +115,6 @@ img {
   text-align: center;
 }
 
-nav {
-  background-color: rgb(231, 248, 204);
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem 3rem;
-  color: rgb(76, 188, 202);
-  font-family: cursive;
-}
-
-.navleft a {
-  cursor: pointer;
-  text-decoration: none;
-  color: rgb(76, 188, 202);
-}
-
-nav ul li {
-  list-style: none;
-  display: inline-block;
-
-  cursor: pointer;
-  padding-left: 1rem;
-}
-nav ul li a {
-  text-decoration: none;
-  color: rgb(19, 78, 167);
-}
-nav ul li a:hover {
-  text-decoration: none;
-  color: rgb(76, 188, 202);
-}
 #input {
   max-width: 20rem;
   margin-right: 2rem;
@@ -127,4 +146,7 @@ nav ul li a:hover {
 }
 .borders {
   margin-top: 2rem;
+}
+.btn-info {
+  margin-top: 5px;
 }
