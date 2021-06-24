@@ -35,7 +35,7 @@ const Form = () => {
             id="input"
           />
           <button type="submit" class="btn btn-primary btn-sm">
-            Search
+            Search by Continent
           </button>
         </form>
       </div>

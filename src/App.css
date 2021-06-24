@@ -119,7 +119,9 @@ img {
   max-width: 20rem;
   margin-right: 2rem;
   border: none;
-  height: auto;
+  height: 1.8rem;
+  border-radius: 5px;
+  outline: none;
 }
 .info-box {
   width: auto;

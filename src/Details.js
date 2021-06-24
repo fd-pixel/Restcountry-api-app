@@ -1,10 +1,16 @@
 import React from "react";
 import { useState } from "react";
 import Country from "./Country";
+import { useHistory } from "react-router-dom";
 
 const Details = (props) => {
   console.log("props", props);
   const res = props?.location?.country;
+  const history = useHistory();
+  const handleBack = () => {
+    console.log("object");
+    history.push("/");
+  };
 
   return (
     <div class="detail-main">
@@ -30,6 +36,9 @@ const Details = (props) => {
               </p>
             );
           })}
+        </div>
+        <div className="btn btn-warning btn-sm" onClick={handleBack}>
+          Back
         </div>
       </div>
     </div>
