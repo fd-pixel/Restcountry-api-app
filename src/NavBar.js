@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="navcenter">Welcome to the World of the Countries</div>
         <ul>
           <li>
-            <Link to="/about" className="btn btn-primary">
+            <Link to="/about" className="btn btn-primary about">
               ABOUT ME
             </Link>
           </li>

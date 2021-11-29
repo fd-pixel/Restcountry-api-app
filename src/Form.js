@@ -7,7 +7,7 @@ const Form = () => {
   const [countryList, setCountryList] = useState([]);
   const [region, setRegion] = useState("");
 
-  const url = `https://restcountries.eu/rest/v2/${region}`;
+  const url = `https://restcountries.com/v3.1/region/${region}`;
   const getData = async () => {
     const response = await axios.get(url);
     console.log(response.data);
@@ -29,9 +29,7 @@ const Form = () => {
         <form onSubmit={handleSearch} action="">
           <input
             type="text"
-            onChange={(e) =>
-              setRegion("region/" + e.target.value.toLowerCase())
-            }
+            onChange={(e) => setRegion(e.target.value.toLowerCase())}
             id="input"
             autoFocus
           />
