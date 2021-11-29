@@ -15,7 +15,9 @@ const Details = (props) => {
   return (
     <div class="detail-main">
       <div className="box-detail">
-        <div className="detail-name">{res?.name?.common}</div>
+        <div className="detail-name">
+          {props?.location?.country?.name?.common}
+        </div>
         <div className="flag">
           <img src={res?.flags?.png} alt="fgh" />
         </div>
@@ -27,7 +29,8 @@ const Details = (props) => {
         </div>
 
         <div className="borders">
-          {res?.name} has {res?.borders?.length} neighboring countries {}{" "}
+          {res?.name?.common} has {res?.borders?.length} neighboring countries{" "}
+          {}{" "}
           {res?.borders?.map((border, index) => {
             console.log(border);
             return (

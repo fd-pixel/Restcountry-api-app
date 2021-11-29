@@ -17,7 +17,6 @@ const Country = ({ country }) => {
       country: country,
     });
   };
-
   const history = useHistory();
 
   return (
