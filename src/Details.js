@@ -24,7 +24,7 @@ const Details = (props) => {
         <div class="info-box">
           <div className="continent ">Continent : {res?.region}</div>
           <div className="capital">Capital : {res?.capital[0]}</div>
-          <div className="currency">Currency : {res?.currencies?.symbol}</div>
+          <div className="currency">Currency : {res?.currencies.name}</div>
           <div className="population">Population :{res?.population}</div>
         </div>
 
