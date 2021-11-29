@@ -23,9 +23,9 @@ const Country = ({ country }) => {
   return (
     <div>
       <div className="box">
-        <div className="name">{country?.name}</div>
+        <div className="name">{country?.name?.common}</div>
         <div className="flag">
-          <img src={country?.flag} alt="fgh" cursor="pointer" />
+          <img src={country?.flags?.png} alt="fgh" cursor="pointer" />
           <div className="btn btn-info btn-sm" onClick={handleClick}>
             Details
           </div>

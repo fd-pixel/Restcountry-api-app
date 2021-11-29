@@ -15,14 +15,14 @@ const Details = (props) => {
   return (
     <div class="detail-main">
       <div className="box-detail">
-        <div className="detail-name">{res?.name}</div>
+        <div className="detail-name">{res?.name?.common}</div>
         <div className="flag">
-          <img src={res?.flag} alt="fgh" />
+          <img src={res?.flags?.png} alt="fgh" />
         </div>
         <div class="info-box">
           <div className="continent ">Continent : {res?.region}</div>
-          <div className="capital">Capital : {res?.capital}</div>
-          <div className="currency">Currency : {res?.currencies[0].name}</div>
+          <div className="capital">Capital : {res?.capital[0]}</div>
+          <div className="currency">Currency : {res?.currencies?.symbol}</div>
           <div className="population">Population :{res?.population}</div>
         </div>
 
