@@ -15,17 +15,26 @@ const Details = (props) => {
   return (
     <div class="detail-main">
       <div className="box-detail">
-        <div className="detail-name">
-          {props?.location?.country?.name?.common}
-        </div>
+        <div className="detail-name">{res?.name}</div>
         <div className="flag">
           <img src={res?.flags?.png} alt="fgh" />
         </div>
-        <div class="info-box">
-          <div className="continent ">Continent : {res?.region}</div>
-          <div className="capital">Capital : {res?.capital[0]}</div>
-          <div className="currency">Currency : {res?.currencies.name}</div>
-          <div className="population">Population :{res?.population}</div>
+        <div className="info-box">
+          <div className="continent ">
+            <span style={{ fontWeight: "bold" }}>Continent :</span>{" "}
+            {res?.region}
+          </div>
+          <div className="capital">
+            <span style={{ fontWeight: "bold" }}>Capital :</span> {res?.capital}
+          </div>
+          <div className="currency">
+            <span style={{ fontWeight: "bold" }}>Currency :</span>{" "}
+            {res?.currencies.map((item) => item.name)}
+          </div>
+          <div className="population">
+            <span style={{ fontWeight: "bold" }}>Population : </span>
+            {res?.population}
+          </div>
         </div>
 
         <div className="borders">

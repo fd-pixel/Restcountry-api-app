@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 nav {
   background-color: rgb(221, 176, 189);
   display: flex;
@@ -49,7 +54,8 @@ body {
 }
 
 img {
-  max-width: 5rem;
+  width: 120px;
+  height: 60px;
 }
 .detail-name {
   margin-bottom: 1rem;
@@ -57,11 +63,13 @@ img {
 }
 .name {
   margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .box {
   max-width: 10rem;
   /* border: 2px solid; */
+  min-height: 5rem;
   margin-top: 5rem;
   margin-right: 2rem;
   justify-content: center;
